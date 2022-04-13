@@ -6,15 +6,14 @@ import styled from "styled-components";
 export const Container = styled(Row)`
 	margin: auto;
 	min-height: 85vh;
-	max-height: 100vh;
-	height: 100vh;
+	max-heighmargin-top00vh;
 	display: flex !important;
 	justify-content: space-between;
 	box-sizing: border-box;
 
 	@media screen and (max-width: 1536px) {
-		padding-top: 18px;
-		padding-bottom: 18px;
+		/* padding-top: 18px; */
+		/* padding-bottom: 18px; */
 	  }
 
 	@media screen and (max-width: 1280px) {
@@ -38,18 +37,19 @@ export const LeftCol = styled(Col)`
 	justify-content: center;
 	align-items: center;
 	min-width: 420px;
-	margin-top:20px;	
+	/* margin-top:20px;	 */
 `;
 export const LogoContainer = styled(Row)`
 	width:60%;
+	padding-top:10px;
 	font-weight:bolder;
 `;
 export const FormContainer = styled.div`
 	display: flex !important;
-	height: 90vh;
+	height: 80vh;
 	width: 60%;
 	@media screen and (max-width: 1536px) {
-		padding-top: 24px;
+		/* padding-top: 24px; */
 	  }
 
 `;

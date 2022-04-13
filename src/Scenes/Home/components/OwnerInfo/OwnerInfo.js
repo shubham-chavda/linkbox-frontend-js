@@ -8,13 +8,13 @@ const OwnerInfo=()=> {
       {/* style={{ display: 'flex ',justifyContent: 'space-between',alignItems: 'center'}} */}
     <Row  >
         <Col span={17} style={{ display: 'flex ',alignItems: 'center' }}>
-        <Avatar src={"https://joeschmoe.io/api/v1/random"} size={45} style={{ border:'1px solid gray', marginRight:'20px' }} />
-        <div style={{fontSize:'20px'}}>Robert__fox_</div>   
+        <Avatar src={"https://joeschmoe.io/api/v1/random"} size={35} style={{ border:'1px solid gray', marginRight:'16px' }} />
+        <div style={{fontSize:'16px'}}>Robert__fox_</div>   
         </Col>
         
         <Col span={6} style={{ display: 'flex ',justifyContent: 'center',alignItems: 'center'}}>
             <Tag>Owner</Tag>
-            </Col>
+        </Col>
 
     </Row>
     <Row style={{ marginTop:'20px'}}>

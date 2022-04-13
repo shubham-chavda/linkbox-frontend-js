@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Content = styled.p`
-    font-size: 14px;
+    font-size: 12px;
 `;
 
 export const Title = styled.p`
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 `;
 export const Name = styled.p`
@@ -13,13 +13,13 @@ export const Name = styled.p`
 `;
 
 export const Tag = styled.div`
-    width: 90%;
+
     display: flex;
     justify-content: center;
-    font-size: 14px;
-    padding:8px;
+    font-size: 12px;
+    padding:5px 16px;
     color: #1379FF;
     border-radius:58px;
-   background:#C7DDF3;
+    background:#C7DDF388;
 
 `;

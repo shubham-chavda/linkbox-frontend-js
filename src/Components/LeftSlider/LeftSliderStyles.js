@@ -3,9 +3,9 @@ import { Layout, Menu } from "antd";
 
 export const Sider = styled(Layout.Sider)`
 	&& {
-		padding-top:20px;
-		height: 100vh;
-		z-index: 100;
+		/* padding-top:20px; */
+		/* height: 100vh; */
+		/* z-index: 100; */
 		&& .ant-menu-item-selected {
 			background: #3973e6;
 		}

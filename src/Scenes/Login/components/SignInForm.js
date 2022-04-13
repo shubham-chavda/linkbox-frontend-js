@@ -39,9 +39,9 @@ const SignInForm = () => {
           <InputField placeholder="name@company.com" />
         </Form.Item>
 
-          <Row style={{marginBottom:'5px'}}>
-            <Col span={6}>  Password</Col>
-            <Col span={10} offset={5} ><a>Forgot Your Password?</a></Col>
+          <Row style={{width:'80%' }} justify="space-between" >
+            <Col span={6} >  Password</Col>
+            <Col span={16} style={{ textAlign:'right'}} ><a>Forgot Your Password?</a></Col>
           </Row>
           
           <Form.Item
@@ -74,11 +74,11 @@ const SignInForm = () => {
           <SignInButton htmltype="submit"> Sign In </SignInButton>
         </Form.Item>
       </Form>
-      <Divider style={{fontSize: '12px',color: 'gray'}}>OR</Divider>
+      <Divider style={{fontSize: '12px',color: 'gray',height: '10px'}}>OR</Divider>
       <Row >
-        <SignInOptions span={15} >
-          <GoogleOutlined style={{fontSize: '25px', marginRight:'10px'}}/>
-          Sign in with Google
+        <SignInOptions span={13} >
+          <GoogleOutlined style={{fontSize: '20px', marginRight:'10px'}}/>
+            <span style={{fontSize: '14px'}}>Sign in with Google</span>
           </SignInOptions>
         <SignInOptions span={3}>
           <img  src={facebookLogo} width="25px" height="25px"  alt="Facebook"/></SignInOptions>

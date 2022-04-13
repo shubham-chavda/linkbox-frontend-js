@@ -8,8 +8,8 @@ import bookmarkIcon from '../../assets/bookmarkIcon.svg'
 import userStarIcon from '../../assets/userStarIcon.svg'
 import InfoIcon from '../../assets/InfoIcon.svg'
 import { Col, Row } from 'antd';
-import OwnerInfo from './components/OwnerInfo';
-import MemberList from './components/MemberList';
+import OwnerInfo from './components/OwnerInfo/OwnerInfo';
+import MemberList from './components/MemberList/MemberList';
 const  Home=()=> {
   return (
     <>
@@ -43,22 +43,22 @@ const  Home=()=> {
 
       {/* Content part start */}
       <Row>
-        <Col span={1} style={{paddingTop:'20px'}}>
+        <Col style={{paddingTop:'20px'}}>
         <LeftSlider />
         </Col >
-        <Col  span={18} style={{paddingTop:'20px',borderRight:'1px solid #E3ECF3'}}>
+        <Col  style={{height: 'calc(100vh - 40px)',paddingTop:'20px',borderRight:'1px solid #E3ECF3',flex:1}}>
             middle Content
         </Col>
 
           {/* right sider Start */}
         <Col style={{paddingTop:'20px'}} span={5}>
-        <Row span={18} >
-          <Col span={24} style={{height:"20vh",padding:'0 20px 0 20px'}}>
+        <Row >
+          <Col style={{padding:'10px 20px',borderBottom:'1px solid #E3ECF3'}}>
          <OwnerInfo />
           </Col>
         </Row>
-        <Row style={{backgroundColor:'pink'}}>
-        <Col span={24} style={{height:"80vh"}}>
+        <Row style={{justifyContent: 'end'}}>
+        <Col   >
           <MemberList />
           </Col>
         </Row>

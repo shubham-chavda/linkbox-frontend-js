@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 export const MainContainer = styled.div`
-    height: 100vh;
+    /* height: 100vh; */
 `;
 export const HeaderContainer = styled(Row)`
     /* height:5%; */
@@ -19,5 +19,8 @@ export const HeaderHome = styled(Col)`
     align-items: center;
 `;
 export const HeaderFileTab= styled(Col)`
+    font-size: 20px;
+
+    padding-left: 10px;
     border-right: 1px solid #E3ECF3;
 `;
