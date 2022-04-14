@@ -1,11 +1,13 @@
 import styled from "styled-components";
-import { Layout, Menu } from "antd";
+import { Avatar, Layout, Menu } from "antd";
 
 export const Sider = styled(Layout.Sider)`
 	&& {
 		/* padding-top:20px; */
 		/* height: 100vh; */
 		/* z-index: 100; */
+		width: 61px !important;
+		min-width: 61px !important;
 		&& .ant-menu-item-selected {
 			background: #3973e6;
 		}
@@ -21,7 +23,9 @@ export const Sider = styled(Layout.Sider)`
 export const SiderMenu = styled(Menu)`
 	&& {
 		border:none !important;
-    height: calc(100% - 57px);
+		margin-left:-5px;
+		width:60px !important;
+    	height: calc(100% - 57px);
 		overflow: overlay;
 
 		&& .ant-menu-item{
@@ -30,12 +34,6 @@ export const SiderMenu = styled(Menu)`
 	}
 `;
 
-export const StrongName = styled.div`
-	padding: 0 1.5rem;
-	border-bottom: 0.5px solid #333;
-	height: 4rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 20px;
+export const AvatarImg = styled(Avatar)`
+	border:1px solid gray;
 `;

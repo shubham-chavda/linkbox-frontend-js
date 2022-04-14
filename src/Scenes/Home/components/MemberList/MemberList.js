@@ -1,38 +1,48 @@
-import { Avatar, Col, List, Row } from 'antd'
+import { Button, Col, Popover, Row } from 'antd'
 import React from 'react'
-import { MemberCount,MainContainer } from './MemberList.style'
+import { MemberCount,MainContainer,MemberListContainer, ListSubContainer, AvatarImg, Name, PopOverContent } from './MemberList.style'
+import {MoreOutlined} from '@ant-design/icons'
 
 const MemberList=()=> {
+  const content =  (
+    <PopOverContent>
+     {/* <Button type="text" >Send Message</Button>
+     <Button type="text" >Report inappropriate actions</Button>
+     <Button type="text" >Unlock user</Button> */}
 
-const data = [
-  {
-    title: 'Ant Design Title 1',
-  },
-  {
-    title: 'Ant Design Title 2',
-  },
-  {
-    title: 'Ant Design Title 3',
-  },
-  {
-    title: 'Ant Design Title 4',
-  },
-];
+      <p>Send Message</p>
+      <p>Report inappropriate actions</p>
+      <p>Unlock user</p>
+    </PopOverContent>
+  );
   return (
+   
     <>
     <MainContainer>
-        <Row  >
-            
+        <Row>
             <MemberCount>28 members</MemberCount>  
         </Row>
-        <Row style={{width:'100%',height: '55vh'}}>
-        {[1,2,3,5,6,77,8,1,2,3,5,6,77,8,1,2,3,5,6,77,8].map(e=><div style={{display:'flex',height:'60px', justifyContent: 'space-between',alignItems:'center',width:'100%'}}>
-          <Col><Avatar src="https://joeschmoe.io/api/v1/random" /></Col>
-          <Col>Karan kacha</Col>
-          <Col>|</Col>
-        </div>)}
+        <MemberListContainer >
+        {[...Array(20)].map((_,index)=>
+        <ListSubContainer key={index} >
+          <Col>
+          <AvatarImg src="https://joeschmoe.io/api/v1/random" size={45} /></Col>
+          <Name span={15} offset={1} >John Doe</Name>
+          <Col >
+          <Popover 
+          autoAdjustOverflow
+          color="#328BFF"
+          placement="leftTop" 
+          content={content}
+          trigger="click"
+          overlayStyle={{borderRadius:"10px"}}
+          >
+            <MoreOutlined style={{fontSize:'18px'}} />
+          </Popover>
+         </Col>
+        </ListSubContainer>)}
     
-        </Row>
+        </MemberListContainer>
     </MainContainer>
     </>
   )

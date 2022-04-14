@@ -6,7 +6,8 @@ import styled from "styled-components";
 export const Container = styled(Row)`
 	margin: auto;
 	min-height: 85vh;
-	max-heighmargin-top00vh;
+	max-height:100vh;
+	height: 100vh;
 	display: flex !important;
 	justify-content: space-between;
 	box-sizing: border-box;
@@ -17,14 +18,14 @@ export const Container = styled(Row)`
 	  }
 
 	@media screen and (max-width: 1280px) {
-		padding-top: 18px;
-		padding-bottom: 18px;
+		/* padding-top: 18px;
+		padding-bottom: 18px; */
 		min-height: 90vh;
 		justify-content: center;
 	  }
 	  @media screen and (max-width: 768px) {
-		padding-top: 18px;
-		padding-bottom: 18px;
+		/* padding-top: 18px;
+		padding-bottom: 18px; */
 		min-height: 90vh;
 		justify-content: center;
 	  }
@@ -58,19 +59,22 @@ export const RightCol = styled(Col)`
     justify-content: center;
 	align-items: center;
 	background:#ECF4FF;
-	
-	@media screen and (max-width: 1280px) {
+	/* @media screen and (max-width: 1280px) {
 		width: 0%;
 		display: none;
 	  }
 	@media screen and (max-width: 768px) {
 		width: 0%;
 		display: none;
+	  } */
+	  @media screen and (max-width: 1021px) {
+		width: 0%;
+		display: none !important;
 	  }
 `;
 export const ImageContainer = styled.div`
-		
 	margin: auto;
 	max-height: 100vh;
 	max-width: 100vh;
+
 `;
